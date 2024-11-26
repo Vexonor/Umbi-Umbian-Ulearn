@@ -2,7 +2,6 @@ import React from "react";
 import "preline/preline";
 import Navbar from './components/navbar';
 import Home from './view/Home/home';
-import HomeAfterLogin from './view/Home/HomeRegistered';
 import Payment from './view/Payment/Payment';
 import Footer from './components/footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -14,7 +13,6 @@ import About from "./view/About/About";
 import Login from './view/Login/Login';
 import CollaborationField from './view/Collaboration/MainCollab';
 import HomeAfterLogin from './view/Home/HomeRegistered';
-import Payment from './view/Payment/Payment';
 
 
 function App() {
