@@ -4,8 +4,9 @@ import Navbar from './components/navbar';
 import Home from './view/Home/home';
 import Footer from './components/footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Course from './view/Course/course';
-import MainTodo from './view/ToDoList/mainTodo';
+import Course_Page from './view/Home/Course_Page';
+import Course_Page_After from './view/Home/Course_Page_After';
+
 
 function App() {
 
@@ -40,8 +41,8 @@ function App() {
       <main className="my-10">
         <Routes>
           <Route path='/home' element={<Home />} />
-          <Route path='/course' element={<Course />} />
-          <Route path='/todoList' element={<MainTodo />} />
+          <Route path='/Course_Page' element ={<Course_Page />} />
+          <Route path='/Course_Page_After' element ={<Course_Page_After />} />
         </Routes>
       </main>
 
