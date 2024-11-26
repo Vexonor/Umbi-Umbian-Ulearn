@@ -2,15 +2,16 @@ import React from 'react';
 import "preline/preline";
 import Navbar from './components/navbar';
 import Home from './view/Home/home';
+import HomeAfterLogin from './view/Home/HomeRegistered';
+import Payment from './view/Payment/Payment';
 import Footer from './components/footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Course from './view/Course/course';
-import MainTodo from './view/ToDoList/mainTodo';
 
 function App() {
 
   return (
-    <Router>
+<>
+<Router>
       <header class="w-full dark:bg-neutral-800 bg-background bg-no-repeat bg-cover flex justify-center gap-4">
 
         {/* Navbar */}
@@ -40,8 +41,8 @@ function App() {
       <main className="my-10">
         <Routes>
           <Route path='/home' element={<Home />} />
-          <Route path='/course' element={<Course />} />
-          <Route path='/todoList' element={<MainTodo />} />
+          <Route path='/home-registered' element={<HomeAfterLogin />} />
+          <Route path='/payment' element={<Payment />} />
         </Routes>
       </main>
 
@@ -49,6 +50,7 @@ function App() {
         <Footer />
       </footer>
     </Router>
+</>
   )
 }
 

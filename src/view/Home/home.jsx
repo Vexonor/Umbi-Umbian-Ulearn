@@ -88,7 +88,7 @@ const Home = () => {
                 )}
             </div>
             {/* Top Rated Expert */}
-            <div className="w-full bg-alabaster my-5 flex flex-col gap-4 justify-center items-center px-5 py-10">
+            <div className="w-full bg-ugray my-5 flex flex-col gap-4 justify-center items-center px-5 py-10">
                 <h2 className="font-rubik font-bold text-charcoal text-2xl w-72 lg:w-full text-center mx-auto mt-5">
                     Learn from Top-Rated Experts
                 </h2>
@@ -144,4 +144,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;
