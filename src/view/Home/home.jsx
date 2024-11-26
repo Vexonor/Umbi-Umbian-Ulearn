@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CourseCard from './courseCard';
 import TopExpertCard from './topExpertCard';
 import HighlightCard from './highlightCard';
@@ -65,6 +66,55 @@ const Home = () => {
                     />
                 )}
             </div>
+
+            {/* Feature */}
+            <h2 className="font-rubik text-charcoal text-3xl font-semibold my-5">Ur Daily Learn</h2>
+            <div className="grid grid-rows-4 grid-cols-2 gap-4">
+                {/* Continue Course */}
+                <div className="col-span-2 bg-alabaster border-2 border-charcoal rounded-lg row-span-1 p-5 flex justify-between items-center">
+                    <div className="flex flex-col justify-between font-rubik text-charcoal">
+                        <h2 className="font-semibold text-2xl flex gap-4 mb-10 items-center">
+                            Basic Fundamental Of Code
+                            <svg xmlns="http://www.w3.org/2000/svg" className="size-10" fill="currentColor" viewBox="0 0 256 256"><path d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24ZM120,40h48v72L148.79,97.6a8,8,0,0,0-9.6,0L120,112Zm80,144H72a31.82,31.82,0,0,0-16,4.29V56A16,16,0,0,1,72,40h32v88a8,8,0,0,0,12.8,6.4L144,114l27.21,20.4A8,8,0,0,0,176,136a8,8,0,0,0,8-8V40h16Z"></path></svg>
+                        </h2>
+                        <p className="text-base">
+                            By Shafiq
+                        </p>
+                        <h3 className="text-xl font-medium">Chapter 1</h3>
+                    </div>
+
+                    <button className="">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-10" fill="currenColor" viewBox="0 0 256 256"><path d="M234.49,111.07,90.41,22.94A20,20,0,0,0,60,39.87V216.13a20,20,0,0,0,30.41,16.93l144.08-88.13a19.82,19.82,0,0,0,0-33.86ZM84,208.85V47.15L216.16,128Z"></path></svg>
+                    </button>
+                </div>
+                {/* To Do List */}
+                <div className="row-span-4">
+                    <Link to="/todoList" className="bg-alabaster h-full rounded-lg border-2 border-charcoal font-rubik p-5 flex flex-col justify-end">
+                        <h2 className="text-charcoal text-2xl font-semibold flex items-center gap-4">
+                            To Do List
+                            <svg xmlns="http://www.w3.org/2000/svg" className="text-charcoal size-10" fill="currentColor" viewBox="0 0 256 256"><path d="M228,128a12,12,0,0,1-12,12H128a12,12,0,0,1,0-24h88A12,12,0,0,1,228,128ZM128,76h88a12,12,0,0,0,0-24H128a12,12,0,0,0,0,24Zm88,104H128a12,12,0,0,0,0,24h88a12,12,0,0,0,0-24ZM79.51,39.51,56,63l-7.51-7.52a12,12,0,0,0-17,17l16,16a12,12,0,0,0,17,0l32-32a12,12,0,0,0-17-17Zm0,64L56,127l-7.51-7.52a12,12,0,1,0-17,17l16,16a12,12,0,0,0,17,0l32-32a12,12,0,0,0-17-17Zm0,64L56,191l-7.51-7.52a12,12,0,1,0-17,17l16,16a12,12,0,0,0,17,0l32-32a12,12,0,0,0-17-17Z"></path></svg>
+                        </h2>
+                        <p>Make Your Own List</p>
+                    </Link>
+                </div>
+                {/* Collaboration Field */}
+                <div className="col-span-1 row-span-2 col-start-2 flex justify-center">
+                    <Link to='/collaboration' className="bg-alabaster rounded-lg border-2 border-charcoal w-10/12 h-full flex flex-col justify-center items-center font-rubik">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-12 text-charcoal" fill="currentColor" viewBox="0 0 256 256"><path d="M27.2,126.4a8,8,0,0,0,11.2-1.6,52,52,0,0,1,83.2,0,8,8,0,0,0,11.2,1.59,7.73,7.73,0,0,0,1.59-1.59h0a52,52,0,0,1,83.2,0,8,8,0,0,0,12.8-9.61A67.85,67.85,0,0,0,203,93.51a40,40,0,1,0-53.94,0,67.27,67.27,0,0,0-21,14.31,67.27,67.27,0,0,0-21-14.31,40,40,0,1,0-53.94,0A67.88,67.88,0,0,0,25.6,115.2,8,8,0,0,0,27.2,126.4ZM176,40a24,24,0,1,1-24,24A24,24,0,0,1,176,40ZM80,40A24,24,0,1,1,56,64,24,24,0,0,1,80,40ZM203,197.51a40,40,0,1,0-53.94,0,67.27,67.27,0,0,0-21,14.31,67.27,67.27,0,0,0-21-14.31,40,40,0,1,0-53.94,0A67.88,67.88,0,0,0,25.6,219.2a8,8,0,1,0,12.8,9.6,52,52,0,0,1,83.2,0,8,8,0,0,0,11.2,1.59,7.73,7.73,0,0,0,1.59-1.59h0a52,52,0,0,1,83.2,0,8,8,0,0,0,12.8-9.61A67.85,67.85,0,0,0,203,197.51ZM80,144a24,24,0,1,1-24,24A24,24,0,0,1,80,144Zm96,0a24,24,0,1,1-24,24A24,24,0,0,1,176,144Z"></path></svg>
+                        <h2 className="font-bold text-charcoal text-2xl">Collaboration Field</h2>
+                        <p className="text-charcoal font-normal text-sm">Someone Need To Explain</p>
+                    </Link>
+                </div>
+                {/* Ur Course */}
+                <div className="col-span-1 row-span-2 col-start-2 flex justify-center">
+                    <div className="bg-alabaster rounded-lg border-2 border-charcoal w-10/12 h-full flex flex-col justify-center items-center font-rubik">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="size-12 text-charcoal" fill="currentColor" viewBox="0 0 256 256"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"></path></svg>
+                        <h2 className="font-bold text-charcoal text-2xl">Ur Course</h2>
+                        <p className="text-charcoal font-normal text-sm">Have You Done It ?</p>
+                    </div>
+                </div>
+            </div>
+
             {/* Course */}
             <div className="flex flex-wrap justify-between items-center gap-2 my-5">
                 <h3 className="font-rubik font-semibold text-lg lg:text-2xl text-charcoal w-full">Course</h3>

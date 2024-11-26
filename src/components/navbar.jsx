@@ -32,9 +32,9 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div className="col-span-1 flex justify-end items-center">
-                    <a href="" className="bg-charcoal text-alabaster font-rubik font-semibold rounded-full text-sm p-2 lg:px-5">
+                    <Link to="/login" className="bg-charcoal text-alabaster font-rubik font-semibold rounded-full text-sm p-2 lg:px-5">
                         Log in
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
