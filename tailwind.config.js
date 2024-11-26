@@ -12,7 +12,8 @@ export default {
       },
       colors: {
         'alabaster': '#FAFAFA',
-        'charcoal': '#323232'
+        'charcoal': '#323232',
+        'crimson': '#DC143C'
       },
       backgroundImage: {
         'background': "url('/img/background.png')",

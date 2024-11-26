@@ -4,8 +4,9 @@ import Navbar from './components/navbar';
 import Home from './view/Home/home';
 import Footer from './components/footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Course from './view/Course/course';
-import MainTodo from './view/ToDoList/mainTodo';
+import MainTodo from './view/TodoList/MainTodo';
+import Login from './view/Login/Login';
+import CollaborationField from './view/Collaboration/MainCollab'
 
 function App() {
 
@@ -39,9 +40,10 @@ function App() {
 
       <main className="my-10">
         <Routes>
+          <Route path='/login' element={<Login />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/course' element={<Course />} />
           <Route path='/todoList' element={<MainTodo />} />
+          <Route path='/collaboration' element={<CollaborationField />} />
         </Routes>
       </main>
 
